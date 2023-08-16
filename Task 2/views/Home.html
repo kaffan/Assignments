@@ -1,0 +1,64 @@
+{% extends "index.html" %}
+
+<!-- Display Contents -->
+
+{% block content %}
+<div style="display: flex; flex-direction: column;">
+    <div>
+        {% for obj in mainData %}
+        {% if obj.id%2===0 %}
+        <div>
+            name : {{ obj.name }}<br>
+            username:{{ obj.username }}<br>
+            email : {{ obj.email }}<br>
+        </div>
+        {% else %}
+        <div>
+            I am odd
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <br>
+    <div>
+        {% for ele in mainData %}
+        {% for key,value in ele.address %}
+          for id - {{ele.id}} key is {{key}} and value is 
+          {% if (value | isObj) %}
+            {% for key,val in value  %}
+             {{key}} : {{ val }}
+            {% endfor %}
+            {% else %}
+            {{ value }}
+          {% endif %}
+          <br>
+        {% endfor %}
+        {% endfor %}
+    </div>
+    <br>
+    <div>
+        {% for ele in mainData %}
+        {% if (ele.email | checkStr) %}
+        Name - {{ ele.name }}<br>
+        Email - {{ ele.email }}<br>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <br>
+    <div>
+        {% for ele in mainData %}
+        {% for key,val in ele %}
+        {% if key | checkAdd %}
+        {% if val.city | checkCity %}
+        The Zip code and Geo of city {{val.city}} : {{val.zipcode}} and 
+        {% for key,val in val.geo %}
+        {{ key }} : {{ val }}
+        {% endfor %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% endfor %}<br>
+    </div> 
+</div>
+{% endblock %}
+

@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Left Section */
+.sec1{
+height: 100%;
+width: 50%;
+}
+
+#img1{
+    height: max-content;
+    width: 100%;
+}
+
+/* Right Section */
+
+.sec2{
+    height: 100%;
+    width: 50%;
+}
+
+.list{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+#logo{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+#logo > img{
+    width: 100%;
+}
+
+.inputC{
+    width: 80%;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+.inputC > div > input[type="text"], .inputC > input{
+    margin: 7px 0;
+    padding: 7px;
+    width: 75%;
+    border: 0;
+}
+.inputC > div {
+    border: 2px solid black;
+    width: 80%;
+    margin: 7px auto;
+    text-align: left;
+}
+form{
+    margin: auto;
+}
+input:focus{
+    outline: none;
+}
+.inputC > div > span{
+    /* margin: 7px 0;
+    padding: 7px; */
+    width: 20%;
+    border:0;
+}
+.mobileC{
+    margin: 7px 0;
+    padding: 7px;
+    width: 70%;
+}
+
+form > div{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width:720px){
+    #main{
+        flex-direction: column;
+    }
+    .sec1, .sec2{
+        width: 100%;
+    }
+}

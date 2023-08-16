@@ -1,0 +1,15 @@
+Task 3
+
+In situation, where I am working on these 2 tasks and I face a family emergency. I will do the following things.
+
+solution:
+1. First of all, I will contact my manager and team immediately and make them aware about my situation.
+2. Since Task 2 requires to be completed within 2 days and Task 1 is not having any fixed delivery date, 
+I will talk about prioritizing delivery of task 2 before task 1 with my manager, team lead and concerned team mates.
+3. After approval from my manager, I will contact with Manoj (Account Manager for Task 1) and explain him my
+situation and tell him that it will take me more than 3 days from current date to deliver the task and also 
+tell him about a high priority task which I am working whose delivery needs to be done in 2 days from now.
+4. After this, I will contact with Ravi (AM of task 2) and inform him about my situation and then assure him that
+the task will be delivered on due date but in worse scenario might get delayed by a day.
+5. In all my talks with Acoount managers of both tasks, I will ensure that my manager is present or atleast aware
+about the developments on this.   

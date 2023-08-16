@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="nunjucks.js"></script>
+</head>
+
+<body>
+    <section id="main">
+        <section class="sec1">
+            <img src="Assets/HeadIMG_D.jpg" id="img1" alt="" srcset="">
+        </section>
+        <section class="sec2">
+            <section class="list">
+                <section id="logo">
+                    <img src="Assets/logo.png" alt="" srcset="">
+                </section>
+                <section style="text-align: center;">
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 3.5em; font-weight: 600;">Get a FREE
+                    </div>
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 1.5em; font-weight: 300;">consultation
+                        with an expert</div>
+                </section>
+                <form class="inputC">
+                    <div>
+                        <input placeholder="Enter your Email...." type="text" id="Email"></input><div></div>
+                    </div>
+                    <div>
+                        <input placeholder="Enter your mobile number..." type="tel" id="phone" ></input><div></div>
+                    </div>
+                    <input onclick="submitHandler(event);" type="button" value="TALK TO US ->" style="font-size: 1em; background-color: black; color: white;">
+                </form>
+                <section></section>
+            </section>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
